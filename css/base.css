@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color:#ca3119;
+    --header-height: 140px;
+    --header-grid: 40px;
+    --header-nav: var(--header-grid);
+    --header-search: calc(var(--header-height) - var(--header-nav));
+    --sale-color:rgba(255, 216, 64, 0.94);
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    /* Đưa về giá trị này 1 rem = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+ 
+    
+}
+
+.roboto-light {
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+.grid {
+    width: 1500px;  
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right:  -5px;
+}
+
+/* text */
+.grid_colum-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.667%;
+  
+}
+
+.grid_colum-2-4{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 19.8%;
+  margin: 0;
+  display: inline-block;
+}
+
+.grid_colum-10{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 83.333%;
+}
+
+
+.btn {
+  min-width: 120px;
+  height: 36px;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.btn.btn-primary {
+  min-width: 120px;
+  height: 36px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+/* Selecttion */
+/* Pagination */
+.pagination{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 50%;
+}
+
+.pagination .pagination_number{
+  list-style-type: none;
+  margin: 0 8px;
+}
+
+.pagination .pagination_number a{
+  --height-pagi: 30px;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #939393;
+  font-style: inherit;
+  min-width: 40px;
+  height: var(--height-pagi);
+  line-height: var(--height-pagi);
+  text-align: center;
+}
+
+.pagination_icon{
+  font-style: normal;
+}
